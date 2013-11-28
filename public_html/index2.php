@@ -64,7 +64,7 @@
      $result = mysqli_query($dbc, $sql);
      echo '<table>';
      
-     while ($row == mysqli_fetch_array($result))
+     while ($row = mysqli_fetch_array($result))
      {
         echo '<th><td>Uploaded By: ' . $row['username'] . "<a href = \"".$_SERVER['PHP_SELF']."?idtodelete="
             .$row['image_id']."\"> Delete</a>" . '<br /><img src="' . $row['image_name'] . '" width="250"></td></th>';
