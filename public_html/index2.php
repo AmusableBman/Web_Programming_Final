@@ -60,7 +60,7 @@
   else
   {
      $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-     $sql = "SELECT * FROM images LEFT OUTER JOIN Zepic_user ON images.user_id = Zepic_user.user_id ORDER BY image_id DESC LIMIT 6";
+     $sql = "SELECT * FROM images LEFT OUTER JOIN Zepic_user ON images.user_id = Zepic_user.user_id ORDER BY images.image_id DESC LIMIT 6";
      $result = mysqli_query($dbc, $sql);
      echo '<table>';
      
