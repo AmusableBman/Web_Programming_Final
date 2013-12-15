@@ -22,7 +22,7 @@
       
       if(!empty($idtodelete))
         {
-            $deletequery = "Delete from images where image_id=$idtodelete";
+            $deletequery = "Delete from Zepic_post where id=$idtodelete";
             mysqli_query($dbc,$deletequery);
             echo "<p>".$deletequery."</p>";
         }
@@ -60,19 +60,19 @@
   else
   {
      $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
-     $sql = "SELECT * FROM images LEFT OUTER JOIN Zepic_user ON images.user_id = Zepic_user.user_id ORDER BY images.image_id DESC LIMIT 6";
+     $sql = "SELECT * FROM Zepic_post LEFT OUTER JOIN Zepic_user ON Zepic_post.user_id = Zepic_user.user_id ORDER BY Zepic_post.id DESC LIMIT 6";
      $result = mysqli_query($dbc, $sql);
      echo '<table>';
      
      while ($row = mysqli_fetch_array($result))
      {
         echo '<th><td>Uploaded By: ' . $row['username'] . "<a href = \"".$_SERVER['PHP_SELF']."?idtodelete="
-            .$row['image_id']."\"> Delete</a>" . '<br /><img src="' . $row['image_name'] . '" width="250"></td></th>';
+            .$row['image_id']."\"> Delete</a>" . '<br /><p width="250">' . $row['title'] . '</p></td></th>';
           
  
         if(!empty($idtodelete))
         {
-            $deletequery = "Delete from images where image_id=$idtodelete";
+            $deletequery = "Delete from Zepic_post where id=$idtodelete";
             mysqli_query($dbc,$deletequery);
         }
      }
