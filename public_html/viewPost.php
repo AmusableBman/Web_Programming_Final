@@ -35,3 +35,5 @@
 	mysqli_close($dbc);   
    require_once('footer1.php');
 ?>
+</body>
+</html>
