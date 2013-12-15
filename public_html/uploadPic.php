@@ -6,6 +6,7 @@
         <link media="screen"href="StylePhixx.css"rel="stylesheet">
     </head>
     <body>
+	<?php require_once('header1.php'); ?>
         <h1>Zepic | Upload</h1> 
         <?php
 

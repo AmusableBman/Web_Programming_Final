@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Snaphixx</title>
+        <title>Zepic</title>
         <link media="screen"href="StylePhixx.css"rel="stylesheet">
     </head>
     <body>
-        <h1>Snaphixx | Home</h1> 
+	<?php require_once('header1.php'); ?>
+        <h1>Zepic | Home</h1> 
         <?php
         // Start the session
        require_once('initializesession.php');

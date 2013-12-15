@@ -6,6 +6,7 @@
         <link media="screen"href="StylePhixx.css"rel="stylesheet">
     </head>
     <body>
+	<?php require_once('header1.php'); ?>
         <h1>Zepic | Home</h1> 
         <?php
        require_once('initializesession.php');
@@ -67,7 +68,7 @@
      while ($row = mysqli_fetch_array($result))
      {
         echo '<th><td>Uploaded By: ' . $row['username'] . "<a href = \"".$_SERVER['PHP_SELF']."?idtodelete="
-            .$row['image_id']."\"> Delete</a>" . '<br /><p width="250">' . $row['title'] . '</p></td></th>';
+            .$row['id']."\"> Delete</a>" . '<br /><a href = "viewPost.php?post_id=' . $row['id'] . '"><p width="250">' . $row['title'] . '</p></a></td></th>';
           
  
         if(!empty($idtodelete))
