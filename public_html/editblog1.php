@@ -1,4 +1,12 @@
+
 <!DOCTYPE html>
+/* 
+    File Name          : editblog1.php
+    Author             : Brandon Hewlett & Vincent Nguyen
+    Website Name       : Zepic
+    File Description   : The page will allow the user to edit their own blogs.
+     
+*/
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -6,9 +14,10 @@
         <link media="screen"href="StylePhixx.css"rel="stylesheet">
     </head>
     <body>
-	<?php require_once('header1.php'); ?>
-        <h1>Zepic | Edit Album</h1> 
+	
         <?php
+       $page_title = 'Edit Blog';
+       require_once('header1.php');   
        require_once('initializesession.php');
        require_once('connectvars.php');
        require_once('navigation.php');
