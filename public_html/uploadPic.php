@@ -20,8 +20,11 @@
         
   <form method="post" action="savePic.php" enctype="multipart/form-data">
    <div>
-    <label for="image">Choose a Profile picture</label>
-    <input type="file" name="image" />
+    <label for="title">Blog Title:</label>
+	<input type= "text" name="title"></input>
+    <textarea rows ="8" cols = "100" name="blog" form="blogForm">
+	</textarea>
+	
    </div>
  
     <input type="submit" value="Upload" class="button" />
