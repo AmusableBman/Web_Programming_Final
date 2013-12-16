@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Zepic</title>
-        <link media="screen"href="StylePhixx.css"rel="stylesheet">
+        <link media="screen"href="Zepic.css"rel="stylesheet">
     </head>
     <body>
 
