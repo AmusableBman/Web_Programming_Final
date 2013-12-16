@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
-/* 
+<!--
     File Name          : index2.php
     Author             : Brandon Hewlett & Vincent Nguyen
     Website Name       : Zepic
     File Description   : The page is the home page after the user has logged in.
      
-*/
+-->
 
 <html>
     <head>
