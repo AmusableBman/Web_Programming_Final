@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-/* 
+<!--
     File Name          : editprofile1.php
     Author             : Brandon Hewlett & Vincent Nguyen
     Website Name       : Zepic
     File Description   : The page allows the user to edit their profile.
      
-*/
+-->
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
