@@ -1,14 +1,24 @@
 <!DOCTYPE html>
+<!--
+    File Name : viewPost.php
+    Author : Brandon Hewlett & Vincent Nguyen
+    Website Name : Zepic
+    File Description : This page allows people to view posts
+     
+-->
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Zepic</title>
-        <link media="screen"href="StylePhixx.css"rel="stylesheet">
+        <link media="screen"href="Zepic.css"rel="stylesheet">
     </head>
     <body>
-	<?php require_once('header1.php'); ?>
-        <h1>Zepic | Home</h1> 
+
         <?php
+        
+        \//changes the header name
+       $page_title = 'Home Page';
+       require_once('header1.php')
        require_once('initializesession.php');
        require_once('connectvars.php');
        require_once('navigation.php');
