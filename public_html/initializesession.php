@@ -1,3 +1,9 @@
+<!--
+File Name : initializesession.php
+Author : Brandon Hewlett & Vincent Nguyen
+Website Name : Zepic
+File Description : This page creates the session.
+-->
 <?php
 session_start();
 
