@@ -1,34 +1,42 @@
+<!--
+    File Name : savePic.php
+    Author : Brandon Hewlett & Vincent Nguyen
+    Website Name : Zepic
+    File Description : The purpose of this page is to save picture uploaded.
+     
+-->
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Zepic</title>
-        <link media="screen"href="StylePhixx.css"rel="stylesheet">
+        <link media="screen"href="Zepic"rel="stylesheet">
     </head>
     <body>
 	<?php require_once('header1.php'); ?>
         <h1>Zepic | Save</h1> 
         <?php
-        // Start the session
+        // Start session
        require_once('initializesession.php');
        require_once('connectvars.php');
        require_once('navigation.php');
 
     $image_name = $_FILES['image']['name'];
     echo $image_name . '<br />';
+    
     //show name and file type
     echo 'Files Type: ' . $_FILES['image']['type'];
-    //ensure the type is correct
+    //ensure comparing correct file types
     if(($_FILES['image']['type'] == 'image/jpeg') || ($_FILES['image']['type'] == 'image/pjpeg'))
     {
 $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);    
      
      //if its valid set variables to assign the directory
-     $tmp_directory = $_FILES['image']['tmp_name'];
+     $temp_directory = $_FILES['image']['tmp_name'];
      $final_directory = 'images/' . $image_name;
      
-     //transfer the file
-     move_uploaded_file($tmp_directory, $final_directory);
+     //transfer file
+     move_uploaded_file($temp_directory, $final_directory);
      $id = $_SESSION['user_id'];
      echo '<img src="' . $final_directory . '" width="300px">';
      $sql = "INSERT INTO images (image_name) VALUES ('$final_directory');";
