@@ -1,11 +1,18 @@
+<!--
+    File Name : logout1.php
+    Author : Brandon Hewlett & Vincent Nguyen
+    Website Name : Zepic
+    File Description : This page if prompt allows the user to log out
+     
+-->
 <?php
-  // If the user is logged in, delete the session vars to log them out
+  // If user is logged in, log them out and delete session
   session_start();
   if (isset($_SESSION['user_id'])) {
-    // Delete the session vars by clearing the $_SESSION array
+    // Delete the session vars 
     $_SESSION = array();
 
-    // Delete the session cookie by setting its expiration to an hour ago (3600)
+    // Delete the session cookie by setting its exp date past its time
     if (isset($_COOKIE[session_name()])) {
       setcookie(session_name(), '', time() - 3600);
     }
@@ -14,11 +21,11 @@
     session_destroy();
   }
 
-  // Delete the user ID and username cookies by setting their expirations to an hour ago (3600)
+  // Delete the user ID and username cookies by setting ts exp date past its time
   setcookie('user_id', '', time() - 3600);
   setcookie('username', '', time() - 3600);
 
-  // Redirect to the home page
+  // Redirect 
   $home_url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . '/index1.php';
   header('Location: ' . $home_url);
 ?>
