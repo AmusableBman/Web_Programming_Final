@@ -6,7 +6,7 @@
     File Description   : The page is meant to allow users to sign up for the site.
      
 -->
-<link media="screen"href="StylePhixx.css"rel="stylesheet">
+<link media="screen"href="Zepic.css"rel="stylesheet">
     <?php
   // Insert the page header
   $page_title = 'Sign Up';
