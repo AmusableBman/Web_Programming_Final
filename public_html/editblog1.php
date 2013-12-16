@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
-/* 
+<!--
     File Name          : editblog1.php
     Author             : Brandon Hewlett & Vincent Nguyen
     Website Name       : Zepic
     File Description   : The page will allow the user to edit their own blogs.
      
-*/
+-->
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
