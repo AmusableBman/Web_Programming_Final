@@ -5,7 +5,7 @@
     echo '<a href="index2.php">Home</a> | ';
     echo '<a href="uploadPic.php">Upload Picture</a> | ';
     echo '<a href="viewprofile1.php">View Profile</a> | ';
-    echo '<a href="editalbum1.php">Edit Album</a> | ';
+    echo '<a href="editblog.php">Edit Blog</a> | ';
     echo '<a href="editprofile1">Edit Profile</a> | ';
     echo '<a href="logout1.php">Log Out (' . $_SESSION['username'] . ')</a>';
     
