@@ -1,0 +1,28 @@
+/* 
+    File Name : Zepic.css
+    Author : Brandon Hewlett & Vincent Nguyen
+    Website Name : Zepic
+    File Description : The page contains all the css applied to the website.
+     
+*/
+
+body {
+
+}
+#login {
+    margin: 0 0 0 0;
+    border: black 2px solid;
+    width: 200px;
+    padding: 5px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    background: white;
+}
+
+#signup {
+    border: black 2px solid;
+    width: 300px;
+}
+
+
