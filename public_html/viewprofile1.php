@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+/* 
+    File Name          : viewprofile1.php
+    Author             : Brandon Hewlett & Vincent Nguyen
+    Website Name       : Zepic
+    File Description   : This page allows the user to view their own profile.
+     
+*/
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -6,9 +13,10 @@
         <link media="screen"href="StylePhixx.css"rel="stylesheet">
     </head>
     <body>
-	<?php require_once('header1.php'); ?>
-        <h1>Zepic | View Profile</h1> 
+
 <?php
+  $page_title = 'Home Page';
+  require_once('header1.php');   
   // Start the session
   require_once('initializesession.php');
   require_once('connectvars.php');
