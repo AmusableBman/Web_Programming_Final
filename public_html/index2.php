@@ -11,14 +11,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Zepic</title>
-        <link media="screen"href="Zepic.css"rel="stylesheet">
+        <link media="screen" href="Zepic.css" rel="stylesheet">
     </head>
     <body>
 
         <?php
        //changes the header name
        $page_title = 'Home Page';
-       require_once('header1.php')
+       require_once('header1.php');
        
        //starts the session
        require_once('initializesession.php');
