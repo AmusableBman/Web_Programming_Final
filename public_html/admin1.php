@@ -1,9 +1,15 @@
 <!DOCTYPE html>
+<!--
+File Name : admin1.php
+Author : Brandon Hewlett & Vincent Nguyen
+Website Name : Zepic
+File Description : The is the admin page that allows the admin to delete any content posted by other users.
+-->
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Zepic</title>
-        <link media="screen"href="StylePhixx.css"rel="stylesheet">
+        <link media="screen"href="Zepic.css"rel="stylesheet">
     </head>
     <body>
 	<?php require_once('header1.php'); ?>
