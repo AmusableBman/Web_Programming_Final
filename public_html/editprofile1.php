@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 /* 
-    File Name          : index1.php
+    File Name          : editprofile1.php
     Author             : Brandon Hewlett & Vincent Nguyen
     Website Name       : Zepic
     File Description   : The page allows the user to edit their profile.
