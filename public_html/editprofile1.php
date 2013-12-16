@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+/* 
+    File Name          : index1.php
+    Author             : Brandon Hewlett & Vincent Nguyen
+    Website Name       : Zepic
+    File Description   : The page allows the user to edit their profile.
+     
+*/
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -6,14 +13,15 @@
         <link media="screen"href="StylePhixx.css"rel="stylesheet">
     </head>
     <body>
-	<?php require_once('header1.php'); ?>
-        <h1>Zepic | Edit Profile</h1> 
+
 <?php
-  // Start the session
+  // Start session
+  $page_title = 'Edit Profile';
+  require_once('header1.php'); 
   require_once('initializesession.php');
   require_once('connectvars.php');
 
-  // Make sure the user is logged in before going any further.
+  // Validate the user is logged in before doing anything else.
   if (!isset($_SESSION['user_id'])) {
     echo '<p class="login">Please <a href="logon1.php">log in</a> to access this page.</p>';
     exit();
@@ -42,7 +50,7 @@
         }
         mysqli_query($dbc, $query);
 
-        // Confirm success with the user
+        // Confirm 
         echo '<p>Your profile has been successfully updated. Would you like to <a href="viewprofile1.php">view your profile</a>?</p>';
 
         mysqli_close($dbc);
