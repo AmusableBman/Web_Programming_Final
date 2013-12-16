@@ -9,8 +9,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Snaphixx</title>
-        <link media="screen"href="StylePhixx.css"rel="stylesheet">
+        <title>Zepic</title>
+        <link media="screen"href="Zepic.css"rel="stylesheet">
     </head>
     <body>
 	
