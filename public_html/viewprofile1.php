@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-/* 
+<!--
     File Name          : viewprofile1.php
     Author             : Brandon Hewlett & Vincent Nguyen
     Website Name       : Zepic
     File Description   : This page allows the user to view their own profile.
      
-*/
+-->
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
