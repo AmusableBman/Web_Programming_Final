@@ -1,16 +1,23 @@
+<!--
+    File Name : logon1.php
+    Author : Brandon Hewlett & Vincent Nguyen
+    Website Name : Zepic
+    File Description : The checks to see if all the information is correct before logging the user in.
+     
+-->
 <?php
   require_once('connectvars.php');
 
-  // Start the session
+  // Start session
   session_start();
 
-  // Clear the error message
+  // Clears the err msg
   $error_msg = "";
 
-  // If the user isn't logged in, try to log them in
+  // If user isnt on, try logging them on.
   if (!isset($_SESSION['user_id'])) {
     if (isset($_POST['submit'])) {
-      // Connect to the database
+      // Connect database
       $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
       // Grab the user-entered log-in data
@@ -44,9 +51,6 @@
     }
   }
 
-  // Insert the page header
-  $page_title = 'Log In';
-  require_once('header.php');
 
   // If the session var is empty, show any error message and the log-in form; otherwise confirm the log-in
   if (empty($_SESSION['user_id'])) {
