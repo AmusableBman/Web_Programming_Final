@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-/* 
+<!--
     File Name          : index1.php
     Author             : Brandon Hewlett & Vincent Nguyen
     Website Name       : Zepic
     File Description   : The page is the first page any user or visitor will see before creating a account or signing in.
      
-*/
+-->
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
