@@ -1,7 +1,16 @@
+<!DOCTYPE html>
+/* 
+    File Name          : signup1.php
+    Author             : Brandon Hewlett & Vincent Nguyen
+    Website Name       : Zepic
+    File Description   : The page is meant to allow users to sign up for the site.
+     
+*/
 <link media="screen"href="StylePhixx.css"rel="stylesheet">
-<h1>Zepic | Sign Up</h1> 
     <?php
   // Insert the page header
+  $page_title = 'Sign Up';
+  require_once('header1.php');   
   require_once('appVars1.php');
   require_once('connectvars.php');
   // Connect to the database
