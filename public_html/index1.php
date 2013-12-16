@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+/* 
+    File Name          : index1.php
+    Author             : Brandon Hewlett & Vincent Nguyen
+    Website Name       : Zepic
+    File Description   : The page is the first page any user or visitor will see before creating a account or signing in.
+     
+*/
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -10,6 +17,8 @@
         <h1>Zepic | Home</h1> 
         <?php
         // Start the session
+       $page_title = 'Home Page';
+       require_once('header1.php');
        require_once('initializesession.php');
        require_once('connectvars.php');
        require_once('navigation.php');
