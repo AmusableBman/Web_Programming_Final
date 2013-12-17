@@ -13,11 +13,10 @@
         <link media="screen"href="Zepic.css"rel="stylesheet">
     </head>
     <body>
-
+  <img id="imglogo" src="images/logo.png" alt="logo"/>  
 <?php
   // Start session
-  $page_title = 'Edit Profile';
-  require_once('header1.php'); 
+
   require_once('initializesession.php');
   require_once('connectvars.php');
 ?>
