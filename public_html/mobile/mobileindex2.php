@@ -17,11 +17,8 @@
         <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script> 
     </head>
     <body>
-
+       <img id="imglogo" src="images/logo.png" alt="logo"/>  
         <?php
-       //changes the header name
-       $page_title = 'Home Page';
-       require_once('header1.php');
        
        //starts the session
        require_once('initializesession.php');
