@@ -16,9 +16,8 @@
 
         <?php
         
-        \//changes the header name
-       $page_title = 'Home Page';
-       require_once('header1.php')
+       
+       require_once('header1.php');
        require_once('initializesession.php');
        require_once('connectvars.php');
        require_once('navigation.php');
@@ -42,6 +41,13 @@
 			echo '<h2>' . $row['title'] . '</h2><br /><p>' . $row['post'];
 		   }
 	   }
+	   
+	 if(isset($_SESSION['user_id']))
+	 {
+		
+	 }else{
+	 echo "<p>Please log in to post and view comments<p>"
+	 }
 	mysqli_close($dbc);   
    require_once('footer1.php');
 ?>
