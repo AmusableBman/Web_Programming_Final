@@ -44,7 +44,11 @@
 	   
 	 if(isset($_SESSION['user_id']))
 	 {
+		?>
 		
+		<form method="post" action="submitComment.php"
+		
+		<?php
 	 }else{
 	 echo "<p>Please log in to post and view comments<p>"
 	 }
