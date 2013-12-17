@@ -35,6 +35,12 @@ body{
         
 }
 
+#navbar{
+    width:2em;
+}
+#login{
+    width: 2em;
+
 #services{
     height: 2em;
     width: 6em;
