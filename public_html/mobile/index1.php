@@ -17,10 +17,10 @@
     </head>
     
     <body>
-        
+       <img id="imglogo" src="images/logo.png" alt="logo"/>  
         <?php
         // Start the session
-       <img id="imglogo" src="images/logo.png" alt="logo"/>  
+       
        require_once('initializesession.php');
        require_once('connectvars.php');
        
