@@ -20,8 +20,7 @@
         
         <?php
         // Start the session
-       $page_title = 'Home Page';
-       require_once('header1.php');
+       <img id="imglogo" src="images/logo.png" alt="logo"/>  
        require_once('initializesession.php');
        require_once('connectvars.php');
        
