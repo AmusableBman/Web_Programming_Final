@@ -25,18 +25,21 @@
 	   
 	   $comment = $_POST['comment'];
 	   $user_id = $_POST['user_id'];
-	   $post_id = $_POST['post_id'];
+	   $post_id = $_POST['content_id'];
 	   
+	   var_dump($comment);
+	   var_dump($post_id);
+	   var_dump($user_id);
 	if($title != NULL && $blog != NULL)
     {
 $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);    
      
-     $sql = "INSERT INTO Zepic_comments (comment, user_id, content_id) VALUES ('$comment', '$user_id', '$content_id');";
+     $sql = "INSERT INTO Zepic_comments (comment, user_id, content_id) VALUES ('$comment', '$user_id', '$post_id');";
      mysqli_query($dbc, $sql);
      mysqli_close($dbc);
   
     }       
-header('Location:index2.php')  
+//header('Location:index2.php')  
 		
 ?>
 </body>
