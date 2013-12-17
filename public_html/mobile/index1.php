@@ -29,6 +29,7 @@
         <div data-role="navbar">
             <ul data-role="listview">
                 <li><a href="http://webdesign4.georgianc.on.ca/~200210636/Zepic/index1.php" data-role="button" data-inline="true">Home</a></li>
+                <li><a href="http://webdesign4.georgianc.on.ca/~200210636/VNWorld/mobile/logout.php" data-role="button" data-inline="true">Logout</a></li>
             </ul>
         </div>
         <?php
