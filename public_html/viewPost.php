@@ -46,11 +46,17 @@
 	 {
 		?>
 		
-		<form method="post" action="submitComment.php"
+		<form method="post" action="submitComment.php" enctype="multipart/form-data">
+		<label for="comment">Comment: (Max Lenth - 500 chars)</label><br />
+		<input type="text" name="comment" maxlength="500"></input>
 		
+		<input type="hidden" value="<?php echo $post_id;?>" name="content_id">
+		<input type="hidden" value="<?php echo $_SESSION['user_id'];?>" name="user_id">
+		
+		<input type="submit" value="Comment" class="button" />
 		<?php
 	 }else{
-	 echo "<p>Please log in to post and view comments<p>"
+	 echo "<p>Please log in to post and view comments<p>";
 	 }
 	mysqli_close($dbc);   
    require_once('footer1.php');
