@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Zepic</title>
-        <link media="screen" href="Zepic.css" rel="stylesheet">
+        <link media="screen" href="StylePhixx.css" rel="stylesheet">
     </head>
     <body>
 
@@ -20,7 +20,25 @@
   // Start the session
   require_once('initializesession.php');
   require_once('connectvars.php');
-
+?>
+          <div data-role="header" data-position="fixed">      
+                <div data-role="navbar">
+            <ul data-role="listview">
+                <li><a href="http://webdesign4.georgianc.on.ca/~200210636/Zepic/mobile/mobileindex2.php" data-role="button" data-inline="true">Home</a></li>
+                <li><a href="http://webdesign4.georgianc.on.ca/~200210636/VNWorld/mobile/mobileprofile.php" data-role="button" data-inline="true">View Profile</a></li>
+                <li><a href="http://webdesign4.georgianc.on.ca/~200210636/VNWorld/mobile/mobileeditblog.php" data-role="button" data-inline="true">Edit Blog</a></li>
+            </ul>
+        </div>
+            
+             <div data-role="content">
+       <ul data-role="listview">
+                <li><a href="http://webdesign4.georgianc.on.ca/~200210636/VNWorld/mobile/mobileeditprofile.php" data-role="button" data-inline="true">Edit Profile</a></li>
+                <li><a href="http://webdesign4.georgianc.on.ca/~200210636/VNWorld/mobile/logout.php" data-role="button" data-inline="true">Logout</a></li>
+            </ul>
+        </div>
+            </div>
+        
+                <?php
   // Make sure the user is logged in before going any further.
   if (!isset($_SESSION['user_id'])) {
     echo '<p class="login">Please <a href="login.php">log in</a> to access this page.</p>';
