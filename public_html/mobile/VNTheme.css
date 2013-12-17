@@ -1,3 +1,9 @@
+/*!
+File Name: VNTheme.css
+Author Name: Vincent Nguyen
+Website Name: VNWorld
+Desc: This is the css for all the pages.
+
 
 /*!
 * jQuery Mobile 1.3.2
@@ -23,6 +29,9 @@ body{
 #navbar2{
     width:23em;
 }
+#signup{
+    left: 50px;
+}
 #login{
     width: 23em;
 }
@@ -39,6 +48,7 @@ body{
     height: 12em;
     width: 18em;
 }
+
 .ui-bar-a {
 	border: 1px solid #573311 /*{a-bar-border}*/;
 	background: #573311 /*{a-bar-background-color}*/;
