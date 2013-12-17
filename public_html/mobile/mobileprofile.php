@@ -13,10 +13,9 @@
         <link media="screen" href="StylePhixx.css" rel="stylesheet">
     </head>
     <body>
-
+<img id="imglogo" src="images/logo.png" alt="logo"/>  
 <?php
-  $page_title = 'Home Page';
-  require_once('header1.php');   
+  
   // Start the session
   require_once('initializesession.php');
   require_once('connectvars.php');
