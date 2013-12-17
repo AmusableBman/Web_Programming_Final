@@ -17,18 +17,19 @@
     </head>
     
     <body>
-        
+       <img id="imglogo" src="images/logo.png" alt="logo"/>  
+       <p>Log in</p>
         <?php
         // Start the session
-       $page_title = 'Home Page';
-       require_once('header1.php');
+       
        require_once('initializesession.php');
        require_once('connectvars.php');
        
        ?>
-        <div data-role="navbar">
+        <div data-role="navbar" id="navbar2">
             <ul data-role="listview">
                 <li><a href="http://webdesign4.georgianc.on.ca/~200210636/Zepic/index1.php" data-role="button" data-inline="true">Home</a></li>
+                <li><a href="http://webdesign4.georgianc.on.ca/~200210636/VNWorld/mobile/logout.php" data-role="button" data-inline="true">Logout</a></li>
             </ul>
         </div>
         <?php
@@ -56,8 +57,7 @@ $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
           $_SESSION['username'] = $row['username'];
           setcookie('user_id', $row['user_id'], time() + (60 * 60 * 24 * 30));    // expires in 30 days
           setcookie('username', $row['username'], time() + (60 * 60 * 24 * 30));  // expires in 30 days
-          $home_url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . 'mobile/index2.php';
-          header('Location: ' . $home_url);
+          header('Location: http://webdesign4.georgianc.on.ca/~200210636/Zepic/mobile/mobileindex2.php');
         }
         else {
           // The username/password are incorrect so set an error message

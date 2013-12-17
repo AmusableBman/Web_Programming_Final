@@ -13,10 +13,9 @@
         <link media="screen" href="Zepic.css" rel="stylesheet">
     </head>
     <body>
-	
+	<img id="imglogo" src="images/logo.png" alt="logo"/>  
         <?php
-       $page_title = 'Edit Blog';
-       require_once('header1.php');   
+   
        require_once('initializesession.php');
        require_once('connectvars.php');
       ?>

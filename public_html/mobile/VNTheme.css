@@ -21,10 +21,19 @@ Desc: This is the css for all the pages.
 /* A
 -----------------------------------------------------------------------------------------------------------*/   
 body{
-    font-size: 10px;
+    font-size: 14px;
     font-family: 'Cantora One', sans-serif;
     color: #333333
     
+}
+#navbar2{
+    width:23em;
+}
+#signup{
+    left: 50px;
+}
+#login{
+    width: 23em;
 }
 
 #projects img{
@@ -32,36 +41,14 @@ body{
 	height: 13em; 
         margin: 1em;  
         text-align: center;
-        
-}
-
-#services{
-    height: 2em;
-    width: 6em;
-}
-
-#selfportrait{
-    height: 15em;
-    width: 20em;
-}
-
-#selfportrait2{
-    height: 22em;
-    width: 20em;
+       
 }
 
 #imglogo{
-    height: 5em;
-    width: 7em;
+    height: 12em;
+    width: 18em;
 }
-#portrait{
-    height: 15em;
-    width: 20em;
-}
-#contactme{
-    text-decoration: none;
-    text-align: center;
-}
+
 .ui-bar-a {
 	border: 1px solid #573311 /*{a-bar-border}*/;
 	background: #573311 /*{a-bar-background-color}*/;
