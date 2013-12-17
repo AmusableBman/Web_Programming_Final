@@ -1,8 +1,8 @@
 <!--
-File Name: beginsession.php
-Author Name: Vincent Nguyen
-Website Name: VNWorld
-Desc: This begins the session.
+File Name : initializesession.php
+Author : Brandon Hewlett & Vincent Nguyen
+Website Name : Zepic
+File Description : This page creates the session.
 -->
 <?php
 session_start();

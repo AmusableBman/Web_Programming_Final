@@ -54,7 +54,25 @@
 		<input type="hidden" value="<?php echo $_SESSION['user_id'];?>" name="user_id">
 		
 		<input type="submit" value="Comment" class="button" />
+		</form>
 		<?php
+		   
+		   $query = "SELECT comment, username, Zepic_post.id FROM Zepic_comments
+					INNER JOIN Zepic_user ON Zepic_comments.user_id = Zepic_user.user_id
+					INNER JOIN Zepic_post ON Zepic_comments.content_id = Zepic_post.id
+					WHERE Zepic_post.id = $post_id";
+		   
+		   $result = mysqli_query($dbc, $query);
+		   
+		   echo "COMMENTS: <br />";
+			echo "<table>";
+			
+		   while ($row = mysqli_fetch_array($result))
+		   {
+			echo '<tr><th><td>' . $row['username'] . ': <p width="250">' . $row['comment'] . '</p></td></th></tr>';
+		   }
+		
+			echo "</table>";
 	 }else{
 	 echo "<p>Please log in to post and view comments<p>";
 	 }

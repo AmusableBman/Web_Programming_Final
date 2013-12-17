@@ -10,7 +10,7 @@
   echo '<hr />';
   if (isset($_SESSION['username'])) {
     echo '<a href="index2.php">Home</a> | ';
-    echo '<a href="uploadPic.php">Upload Picture</a> | ';
+    echo '<a href="uploadPic.php">Upload Blog</a> | ';
     echo '<a href="viewprofile1.php">View Profile</a> | ';
     echo '<a href="editblog1.php">Edit Blog</a> | ';
     echo '<a href="editprofile1">Edit Profile</a> | ';
