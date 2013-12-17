@@ -1,9 +1,3 @@
-/*!
-File Name: VNTheme.css
-Author Name: Vincent Nguyen
-Website Name: VNWorld
-Desc: This is the css for all the pages.
-
 
 /*!
 * jQuery Mobile 1.3.2
@@ -21,10 +15,16 @@ Desc: This is the css for all the pages.
 /* A
 -----------------------------------------------------------------------------------------------------------*/   
 body{
-    font-size: 10px;
+    font-size: 14px;
     font-family: 'Cantora One', sans-serif;
     color: #333333
     
+}
+#navbar2{
+    width:23em;
+}
+#login{
+    width: 23em;
 }
 
 #projects img{
@@ -32,44 +32,12 @@ body{
 	height: 13em; 
         margin: 1em;  
         text-align: center;
-        
-}
-#navbar2{
-    width:9em;
-}
-#login{
-    width: 9em;
-}
-#imglogo{
-    height: 8em;
-    width: 8em;
-}
-#services{
-    height: 2em;
-    width: 6em;
-}
-
-#selfportrait{
-    height: 15em;
-    width: 20em;
-}
-
-#selfportrait2{
-    height: 22em;
-    width: 20em;
+       
 }
 
 #imglogo{
-    height: 5em;
-    width: 7em;
-}
-#portrait{
-    height: 15em;
-    width: 20em;
-}
-#contactme{
-    text-decoration: none;
-    text-align: center;
+    height: 12em;
+    width: 18em;
 }
 .ui-bar-a {
 	border: 1px solid #573311 /*{a-bar-border}*/;
