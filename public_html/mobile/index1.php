@@ -18,6 +18,7 @@
     
     <body>
        <img id="imglogo" src="images/logo.png" alt="logo"/>  
+       <p>Log in</p>
         <?php
         // Start the session
        
@@ -56,8 +57,7 @@ $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
           $_SESSION['username'] = $row['username'];
           setcookie('user_id', $row['user_id'], time() + (60 * 60 * 24 * 30));    // expires in 30 days
           setcookie('username', $row['username'], time() + (60 * 60 * 24 * 30));  // expires in 30 days
-          $home_url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . 'mobile/index2.php';
-          header('Location: ' . $home_url);
+          header('Location: http://webdesign4.georgianc.on.ca/~200210636/Zepic/mobile/mobileindex2.php');
         }
         else {
           // The username/password are incorrect so set an error message
