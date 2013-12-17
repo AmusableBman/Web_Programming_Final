@@ -34,13 +34,16 @@ body{
         text-align: center;
         
 }
-
-#navbar{
-    width:2em;
+#navbar2{
+    width:9em;
 }
 #login{
-    width: 2em;
-
+    width: 9em;
+}
+#imglogo{
+    height: 8em;
+    width: 8em;
+}
 #services{
     height: 2em;
     width: 6em;
