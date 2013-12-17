@@ -22,7 +22,7 @@
    <div>
     <label for="title">Blog Title:</label>
 	<input type= "text" name="title"></input>
-    <textarea rows ="8" cols = "100" name="blog" form="blogForm">
+    <textarea rows ="8" cols = "100" name="blog" form="blogForm" maxlength = "10000">
 	</textarea>
 	
    </div>

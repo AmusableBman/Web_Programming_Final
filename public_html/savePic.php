@@ -21,27 +21,16 @@
        require_once('connectvars.php');
        require_once('navigation.php');
 
-    $image_name = $_FILES['image']['name'];
-    echo $image_name . '<br />';
-    
-    //show name and file type
-    echo 'Files Type: ' . $_FILES['image']['type'];
-    //ensure comparing correct file types
-    if(($_FILES['image']['type'] == 'image/jpeg') || ($_FILES['image']['type'] == 'image/pjpeg'))
+    $title = $_POST['title'];
+	$blog = $_POST['blog'];
+	$user_id = $_SESSION['user_id'];
+	$date = date('Y/m/d H:i:s', time());
+	
+    if($title != NULL && $blog != NULL)
     {
 $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);    
      
-     //if its valid set variables to assign the directory
-     $temp_directory = $_FILES['image']['tmp_name'];
-     $final_directory = 'images/' . $image_name;
-     
-     //transfer file
-     move_uploaded_file($temp_directory, $final_directory);
-     $id = $_SESSION['user_id'];
-     echo '<img src="' . $final_directory . '" width="300px">';
-     $sql = "INSERT INTO images (image_name) VALUES ('$final_directory');";
-     mysqli_query($dbc, $sql);
-     $sql = "UPDATE images SET user_id = '$id' WHERE image_name = '$final_directory'";
+     $sql = "INSERT INTO Zepic_post (title, post, user_id, date) VALUES ('$title', '$blog', '$user_id', '$date');";
      mysqli_query($dbc, $sql);
      mysqli_close($dbc);
   
